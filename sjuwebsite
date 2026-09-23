@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. John's University | Student Life</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #222;
+        }
+
+        header {
+            background-color: #b30824;
+            color: white;
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+
+        nav {
+            background-color: #17264a;
+            padding: 16px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f2c94c;
+        }
+
+        .hero {
+            background-color: #b30824;
+            color: white;
+            padding: 45px 8%;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        .hero img {
+            width: 100%;
+            max-width: 850px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        .section-title {
+            color: #b30824;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            flex: 1;
+            min-width: 250px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        .card img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .card h3 {
+            color: #b30824;
+        }
+
+        .about {
+            background-color: white;
+            padding: 25px;
+            margin-top: 30px;
+            border-left: 5px solid #b30824;
+            line-height: 1.7;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #b30824;
+            color: white;
+            padding: 12px 22px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background-color: #17264a;
+        }
+
+        footer {
+            background-color: #17264a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                text-align: center;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            .hero img {
+                height: 230px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>ST. JOHN'S UNIVERSITY</h1>
+        <span>Queens, New York</span>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#campus">Campus Life</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h2>Welcome to St. John's University</h2>
+        <p>Discover your future. Find your passion. Become a Johnnie.</p>
+
+        <img
+            src="https://www.stjohns.edu/sites/default/files/styles/640w/public/2020-07/dsc_3764_300_960x640.jpg?itok=oBA6ZozQ"
+            alt="St. John's University campus"
+        >
+    </section>
+
+    <main>
+        <h2 class="section-title" id="campus">
+            Explore Campus Life
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img
+                    src="https://www.stjohns.edu/sites/default/files/styles/640w/public/2020-07/dsc_3764_300_960x640.jpg?itok=oBA6ZozQ"
+                    alt="University campus building"
+                >
+
+                <h3>Our Campus</h3>
+
+                <p>
+                    Experience university life on the beautiful
+                    Queens campus in New York City.
+                </p>
+
+                <a
+                    class="button"
+                    href="https://www.stjohns.edu/queens-residential-campus"
+                    target="_blank"
+                >
+                    Explore Campus
+                </a>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=900&q=80"
+                    alt="College students on campus"
+                >
+
+                <h3>Student Life</h3>
+
+                <p>
+                    Meet new people, join student organizations,
+                    and create unforgettable college memories.
+                </p>
+
+                <a
+                    class="button"
+                    href="https://www.stjohns.edu/"
+                    target="_blank"
+                >
+                    Learn More
+                </a>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=900&q=80"
+                    alt="Students studying together"
+                >
+
+                <h3>Academics</h3>
+
+                <p>
+                    Discover opportunities to learn, grow,
+                    and prepare for your future career.
+                </p>
+
+                <a
+                    class="button"
+                    href="https://www.stjohns.edu/academics"
+                    target="_blank"
+                >
+                    Discover Programs
+                </a>
+            </div>
+
+        </div>
+
+        <section class="about" id="about">
+            <h2>About St. John's</h2>
+
+            <p>
+                St. John's University is a university in New York
+                that offers students opportunities to pursue
+                their academic goals, participate in campus life,
+                and prepare for their future careers.
+            </p>
+
+            <p>
+                From academics to student organizations,
+                there are many ways to get involved and make
+                your college experience meaningful.
+            </p>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <h3>St. John's University</h3>
+        <p>8000 Utopia Parkway, Queens, NY 11439</p>
+        <p>Explore. Learn. Grow.</p>
+        <p>&copy; 2026 Student Web Project</p>
+    </footer>
+
+</body>
+</html>
